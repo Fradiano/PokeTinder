@@ -17,6 +17,9 @@
 		9AA61CD42977F72400E45F2A /* PokeTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CD32977F72400E45F2A /* PokeTinderTests.swift */; };
 		9AA61CDE2977F72400E45F2A /* PokeTinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CDD2977F72400E45F2A /* PokeTinderUITests.swift */; };
 		9AA61CE02977F72400E45F2A /* PokeTinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CDF2977F72400E45F2A /* PokeTinderUITestsLaunchTests.swift */; };
+		9AA61CED2977F7C600E45F2A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CEC2977F7C600E45F2A /* CardView.swift */; };
+		9AA61CF129783BE900E45F2A /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CF029783BE900E45F2A /* ApiService.swift */; };
+		9AA61CF329783C6900E45F2A /* ApiAntwort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CF229783C6900E45F2A /* ApiAntwort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		9AA61CD92977F72400E45F2A /* PokeTinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeTinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA61CDD2977F72400E45F2A /* PokeTinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeTinderUITests.swift; sourceTree = "<group>"; };
 		9AA61CDF2977F72400E45F2A /* PokeTinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeTinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9AA61CEC2977F7C600E45F2A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9AA61CF029783BE900E45F2A /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		9AA61CF229783C6900E45F2A /* ApiAntwort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAntwort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +110,14 @@
 				9AA61CB92977F72200E45F2A /* AppDelegate.swift */,
 				9AA61CBB2977F72200E45F2A /* SceneDelegate.swift */,
 				9AA61CBD2977F72200E45F2A /* ViewController.swift */,
+				9AA61CEC2977F7C600E45F2A /* CardView.swift */,
 				9AA61CBF2977F72200E45F2A /* Main.storyboard */,
 				9AA61CC52977F72400E45F2A /* Assets.xcassets */,
 				9AA61CC72977F72400E45F2A /* LaunchScreen.storyboard */,
 				9AA61CCA2977F72400E45F2A /* Info.plist */,
 				9AA61CC22977F72200E45F2A /* PokeTinder.xcdatamodeld */,
+				9AA61CF029783BE900E45F2A /* ApiService.swift */,
+				9AA61CF229783C6900E45F2A /* ApiAntwort.swift */,
 			);
 			path = PokeTinder;
 			sourceTree = "<group>";
@@ -263,8 +272,11 @@
 			files = (
 				9AA61CC42977F72200E45F2A /* PokeTinder.xcdatamodeld in Sources */,
 				9AA61CBE2977F72200E45F2A /* ViewController.swift in Sources */,
+				9AA61CF329783C6900E45F2A /* ApiAntwort.swift in Sources */,
+				9AA61CF129783BE900E45F2A /* ApiService.swift in Sources */,
 				9AA61CBA2977F72200E45F2A /* AppDelegate.swift in Sources */,
 				9AA61CBC2977F72200E45F2A /* SceneDelegate.swift in Sources */,
+				9AA61CED2977F7C600E45F2A /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
