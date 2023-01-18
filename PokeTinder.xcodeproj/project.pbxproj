@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AA61CBA2977F72200E45F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CB92977F72200E45F2A /* AppDelegate.swift */; };
+		9AA61CBC2977F72200E45F2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CBB2977F72200E45F2A /* SceneDelegate.swift */; };
+		9AA61CBE2977F72200E45F2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CBD2977F72200E45F2A /* ViewController.swift */; };
+		9AA61CC12977F72200E45F2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA61CBF2977F72200E45F2A /* Main.storyboard */; };
+		9AA61CC42977F72200E45F2A /* PokeTinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CC22977F72200E45F2A /* PokeTinder.xcdatamodeld */; };
+		9AA61CC62977F72400E45F2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA61CC52977F72400E45F2A /* Assets.xcassets */; };
+		9AA61CC92977F72400E45F2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA61CC72977F72400E45F2A /* LaunchScreen.storyboard */; };
+		9AA61CD42977F72400E45F2A /* PokeTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CD32977F72400E45F2A /* PokeTinderTests.swift */; };
+		9AA61CDE2977F72400E45F2A /* PokeTinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CDD2977F72400E45F2A /* PokeTinderUITests.swift */; };
+		9AA61CE02977F72400E45F2A /* PokeTinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CDF2977F72400E45F2A /* PokeTinderUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AA61CD02977F72400E45F2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA61CAE2977F72200E45F2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AA61CB52977F72200E45F2A;
+			remoteInfo = PokeTinder;
+		};
+		9AA61CDA2977F72400E45F2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AA61CAE2977F72200E45F2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AA61CB52977F72200E45F2A;
+			remoteInfo = PokeTinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9AA61CB62977F72200E45F2A /* PokeTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA61CB92977F72200E45F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AA61CBB2977F72200E45F2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9AA61CBD2977F72200E45F2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AA61CC02977F72200E45F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AA61CC32977F72200E45F2A /* PokeTinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PokeTinder.xcdatamodel; sourceTree = "<group>"; };
+		9AA61CC52977F72400E45F2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AA61CC82977F72400E45F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AA61CCA2977F72400E45F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AA61CCF2977F72400E45F2A /* PokeTinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeTinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA61CD32977F72400E45F2A /* PokeTinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeTinderTests.swift; sourceTree = "<group>"; };
+		9AA61CD92977F72400E45F2A /* PokeTinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeTinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA61CDD2977F72400E45F2A /* PokeTinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeTinderUITests.swift; sourceTree = "<group>"; };
+		9AA61CDF2977F72400E45F2A /* PokeTinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeTinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AA61CB32977F72200E45F2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA61CCC2977F72400E45F2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA61CD62977F72400E45F2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AA61CAD2977F72200E45F2A = {
+			isa = PBXGroup;
+			children = (
+				9AA61CB82977F72200E45F2A /* PokeTinder */,
+				9AA61CD22977F72400E45F2A /* PokeTinderTests */,
+				9AA61CDC2977F72400E45F2A /* PokeTinderUITests */,
+				9AA61CB72977F72200E45F2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AA61CB72977F72200E45F2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AA61CB62977F72200E45F2A /* PokeTinder.app */,
+				9AA61CCF2977F72400E45F2A /* PokeTinderTests.xctest */,
+				9AA61CD92977F72400E45F2A /* PokeTinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AA61CB82977F72200E45F2A /* PokeTinder */ = {
+			isa = PBXGroup;
+			children = (
+				9AA61CB92977F72200E45F2A /* AppDelegate.swift */,
+				9AA61CBB2977F72200E45F2A /* SceneDelegate.swift */,
+				9AA61CBD2977F72200E45F2A /* ViewController.swift */,
+				9AA61CBF2977F72200E45F2A /* Main.storyboard */,
+				9AA61CC52977F72400E45F2A /* Assets.xcassets */,
+				9AA61CC72977F72400E45F2A /* LaunchScreen.storyboard */,
+				9AA61CCA2977F72400E45F2A /* Info.plist */,
+				9AA61CC22977F72200E45F2A /* PokeTinder.xcdatamodeld */,
+			);
+			path = PokeTinder;
+			sourceTree = "<group>";
+		};
+		9AA61CD22977F72400E45F2A /* PokeTinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AA61CD32977F72400E45F2A /* PokeTinderTests.swift */,
+			);
+			path = PokeTinderTests;
+			sourceTree = "<group>";
+		};
+		9AA61CDC2977F72400E45F2A /* PokeTinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9AA61CDD2977F72400E45F2A /* PokeTinderUITests.swift */,
+				9AA61CDF2977F72400E45F2A /* PokeTinderUITestsLaunchTests.swift */,
+			);
+			path = PokeTinderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AA61CB52977F72200E45F2A /* PokeTinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AA61CE32977F72400E45F2A /* Build configuration list for PBXNativeTarget "PokeTinder" */;
+			buildPhases = (
+				9AA61CB22977F72200E45F2A /* Sources */,
+				9AA61CB32977F72200E45F2A /* Frameworks */,
+				9AA61CB42977F72200E45F2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokeTinder;
+			productName = PokeTinder;
+			productReference = 9AA61CB62977F72200E45F2A /* PokeTinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AA61CCE2977F72400E45F2A /* PokeTinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AA61CE62977F72400E45F2A /* Build configuration list for PBXNativeTarget "PokeTinderTests" */;
+			buildPhases = (
+				9AA61CCB2977F72400E45F2A /* Sources */,
+				9AA61CCC2977F72400E45F2A /* Frameworks */,
+				9AA61CCD2977F72400E45F2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AA61CD12977F72400E45F2A /* PBXTargetDependency */,
+			);
+			name = PokeTinderTests;
+			productName = PokeTinderTests;
+			productReference = 9AA61CCF2977F72400E45F2A /* PokeTinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AA61CD82977F72400E45F2A /* PokeTinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AA61CE92977F72400E45F2A /* Build configuration list for PBXNativeTarget "PokeTinderUITests" */;
+			buildPhases = (
+				9AA61CD52977F72400E45F2A /* Sources */,
+				9AA61CD62977F72400E45F2A /* Frameworks */,
+				9AA61CD72977F72400E45F2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AA61CDB2977F72400E45F2A /* PBXTargetDependency */,
+			);
+			name = PokeTinderUITests;
+			productName = PokeTinderUITests;
+			productReference = 9AA61CD92977F72400E45F2A /* PokeTinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AA61CAE2977F72200E45F2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					9AA61CB52977F72200E45F2A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					9AA61CCE2977F72400E45F2A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9AA61CB52977F72200E45F2A;
+					};
+					9AA61CD82977F72400E45F2A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9AA61CB52977F72200E45F2A;
+					};
+				};
+			};
+			buildConfigurationList = 9AA61CB12977F72200E45F2A /* Build configuration list for PBXProject "PokeTinder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AA61CAD2977F72200E45F2A;
+			productRefGroup = 9AA61CB72977F72200E45F2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AA61CB52977F72200E45F2A /* PokeTinder */,
+				9AA61CCE2977F72400E45F2A /* PokeTinderTests */,
+				9AA61CD82977F72400E45F2A /* PokeTinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AA61CB42977F72200E45F2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA61CC92977F72400E45F2A /* LaunchScreen.storyboard in Resources */,
+				9AA61CC62977F72400E45F2A /* Assets.xcassets in Resources */,
+				9AA61CC12977F72200E45F2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA61CCD2977F72400E45F2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA61CD72977F72400E45F2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AA61CB22977F72200E45F2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA61CC42977F72200E45F2A /* PokeTinder.xcdatamodeld in Sources */,
+				9AA61CBE2977F72200E45F2A /* ViewController.swift in Sources */,
+				9AA61CBA2977F72200E45F2A /* AppDelegate.swift in Sources */,
+				9AA61CBC2977F72200E45F2A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA61CCB2977F72400E45F2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA61CD42977F72400E45F2A /* PokeTinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA61CD52977F72400E45F2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA61CDE2977F72400E45F2A /* PokeTinderUITests.swift in Sources */,
+				9AA61CE02977F72400E45F2A /* PokeTinderUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AA61CD12977F72400E45F2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AA61CB52977F72200E45F2A /* PokeTinder */;
+			targetProxy = 9AA61CD02977F72400E45F2A /* PBXContainerItemProxy */;
+		};
+		9AA61CDB2977F72400E45F2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AA61CB52977F72200E45F2A /* PokeTinder */;
+			targetProxy = 9AA61CDA2977F72400E45F2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AA61CBF2977F72200E45F2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AA61CC02977F72200E45F2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9AA61CC72977F72400E45F2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AA61CC82977F72400E45F2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AA61CE12977F72400E45F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AA61CE22977F72400E45F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AA61CE42977F72400E45F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokeTinder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.FradianoHasani.PokeTinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AA61CE52977F72400E45F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokeTinder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.FradianoHasani.PokeTinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9AA61CE72977F72400E45F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.FradianoHasani.PokeTinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeTinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokeTinder";
+			};
+			name = Debug;
+		};
+		9AA61CE82977F72400E45F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.FradianoHasani.PokeTinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeTinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PokeTinder";
+			};
+			name = Release;
+		};
+		9AA61CEA2977F72400E45F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.FradianoHasani.PokeTinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PokeTinder;
+			};
+			name = Debug;
+		};
+		9AA61CEB2977F72400E45F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.FradianoHasani.PokeTinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PokeTinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AA61CB12977F72200E45F2A /* Build configuration list for PBXProject "PokeTinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA61CE12977F72400E45F2A /* Debug */,
+				9AA61CE22977F72400E45F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AA61CE32977F72400E45F2A /* Build configuration list for PBXNativeTarget "PokeTinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA61CE42977F72400E45F2A /* Debug */,
+				9AA61CE52977F72400E45F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AA61CE62977F72400E45F2A /* Build configuration list for PBXNativeTarget "PokeTinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA61CE72977F72400E45F2A /* Debug */,
+				9AA61CE82977F72400E45F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AA61CE92977F72400E45F2A /* Build configuration list for PBXNativeTarget "PokeTinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA61CEA2977F72400E45F2A /* Debug */,
+				9AA61CEB2977F72400E45F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9AA61CC22977F72200E45F2A /* PokeTinder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9AA61CC32977F72200E45F2A /* PokeTinder.xcdatamodel */,
+			);
+			currentVersion = 9AA61CC32977F72200E45F2A /* PokeTinder.xcdatamodel */;
+			path = PokeTinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9AA61CAE2977F72200E45F2A /* Project object */;
+}
