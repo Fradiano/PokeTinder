@@ -1,9 +1,6 @@
 
-//  CardView.swift
-//  TinderSwipeView
-//  Created by Nick on 11/05/19.
-//  Copyright © 2019 Nick. All rights reserved.
 import UIKit
+import CoreData
 
 let theresoldMargin = (UIScreen.main.bounds.size.width/2) * 0.75
 let stength : CGFloat = 4
@@ -15,18 +12,13 @@ protocol CardViewDelegate: NSObjectProtocol {
     func cardGoesLeft(card: CardView)
 }
 
-class CardView: UIView {
-    var image: UIImage!{
-        didSet{
-            
-            let cardImage = UIImageView(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
-            cardImage.layer.cornerRadius = bounds.width / 20
-            cardImage.image = self.image
-            self.addSubview(cardImage)
-        }
-    }
+class CardView: UIImageView {
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
     weak var delegate: CardViewDelegate?
     
+    var cardSaver: Datum!
     var xCenter: CGFloat = 0.0
     var yCenter: CGFloat = 0.0
     var originalPoint = CGPoint.zero
@@ -42,16 +34,15 @@ class CardView: UIView {
         layer.cornerRadius = bounds.width / 20
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.beingDragged))
         addGestureRecognizer(panGestureRecognizer)
-        
-        let cardImage = UIImageView(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
-        cardImage.image = self.image
-        cardImage.layer.cornerRadius = bounds.width / 20
-        
-        self.addSubview(cardImage)
     }
 
     func cardGoesRight() {
-        print("rechts gewischt")
+        
+        var likedPkm = Pokedex(context: appDelegate.persistentContainer.viewContext)
+        
+        likedPkm.name = cardSaver.name
+        appDelegate.saveContext()
+        
         delegate?.cardGoesRight(card: self)
         let finishPoint = CGPoint(x: frame.size.width*2, y: 2 * yCenter + originalPoint.y)
         UIView.animate(withDuration: 0.5, animations: {

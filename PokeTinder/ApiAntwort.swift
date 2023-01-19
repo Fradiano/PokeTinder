@@ -13,7 +13,7 @@ struct ApiAntwort: Codable {
 
 // MARK: - Datum
 struct Datum: Codable {
-    let id, name: String
+    let id, name: String?
     let level: String?
     let evolvesFrom: String?
     let number, artist: String?

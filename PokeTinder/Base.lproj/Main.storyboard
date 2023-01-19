@@ -68,12 +68,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzi-y3-s0t" customClass="CardView" customModule="PokeTinder" customModuleProvider="target">
-                                <rect key="frame" x="20" y="180.66666666666663" width="353" height="491"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="nzi-y3-s0t" secondAttribute="height" multiplier="353:491" id="YxR-yj-b81"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="At2-Vg-1ii">
                                 <rect key="frame" x="159" y="734" width="75" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -83,26 +77,53 @@
                                     <action selector="bugBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SSv-fm-78K"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rueckseite" translatesAutoresizingMaskIntoConstraints="NO" id="WRb-jN-2MF" customClass="CardView" customModule="PokeTinder" customModuleProvider="target">
+                                <rect key="frame" x="26" y="228.66666666666663" width="341" height="461"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WRb-jN-2MF" secondAttribute="height" multiplier="341:461" id="aMa-I1-vI9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rueckseite" translatesAutoresizingMaskIntoConstraints="NO" id="NUQ-lJ-ko8" customClass="CardView" customModule="PokeTinder" customModuleProvider="target">
+                                <rect key="frame" x="21" y="199" width="351" height="484"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NUQ-lJ-ko8" secondAttribute="height" multiplier="351:484" id="JTJ-4H-Uwx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rueckseite" translatesAutoresizingMaskIntoConstraints="NO" id="zKf-Fk-woR" customClass="CardView" customModule="PokeTinder" customModuleProvider="target">
+                                <rect key="frame" x="16" y="176" width="361" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zKf-Fk-woR" secondAttribute="height" multiplier="361:500" id="c1w-vH-gyF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nzi-y3-s0t" secondAttribute="trailing" constant="20" id="Ui1-lf-Fn1"/>
-                            <constraint firstItem="nzi-y3-s0t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vIk-ww-piK"/>
-                            <constraint firstItem="nzi-y3-s0t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vpF-wI-n2v"/>
+                            <constraint firstItem="zKf-Fk-woR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1vC-Cn-D2q"/>
+                            <constraint firstItem="WRb-jN-2MF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="FaQ-g3-QUm"/>
+                            <constraint firstItem="WRb-jN-2MF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="33" id="GaK-zX-zQS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WRb-jN-2MF" secondAttribute="trailing" constant="26" id="Rgq-tf-Bt5"/>
+                            <constraint firstItem="NUQ-lJ-ko8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="UjP-Zp-ApR"/>
+                            <constraint firstItem="NUQ-lJ-ko8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="15" id="W9W-7t-4rK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zKf-Fk-woR" secondAttribute="trailing" constant="16" id="lSZ-01-bDB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NUQ-lJ-ko8" secondAttribute="trailing" constant="21" id="mI5-rt-FgL"/>
+                            <constraint firstItem="zKf-Fk-woR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zbm-E5-suk"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="8Sc-d6-zQ6"/>
                     <connections>
-                        <outlet property="cardView" destination="nzi-y3-s0t" id="AfH-nq-Gxu"/>
+                        <outlet property="firstCard" destination="zKf-Fk-woR" id="7ND-RY-gMC"/>
+                        <outlet property="lastCard" destination="WRb-jN-2MF" id="Ehi-Nz-ugK"/>
+                        <outlet property="secondCard" destination="NUQ-lJ-ko8" id="PFb-Cc-ziz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-964" y="187"/>
+            <point key="canvasLocation" x="-964.12213740458014" y="186.61971830985917"/>
         </scene>
     </scenes>
     <resources>
+        <image name="rueckseite" width="759" height="1053"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
