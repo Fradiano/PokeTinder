@@ -1,20 +1,27 @@
 
 import UIKit
-import CoreData
 
 let theresoldMargin = (UIScreen.main.bounds.size.width/2) * 0.75
 let stength : CGFloat = 4
 let range : CGFloat = 0.90
 
 protocol CardViewDelegate: NSObjectProtocol {
-    func didSelectCard(card: CardView)
-    func cardGoesRight(card: CardView)
-    func cardGoesLeft(card: CardView)
+    func didSelectCard(card: Datum)
+    func cardGoesRight(card: Datum)
+    func cardGoesLeft(card: Datum)
 }
 
 class CardView: UIImageView {
     
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var currentIndex = 0
+    var cards = [Datum](){
+        didSet{
+            let url = URL(string: (cards[0].images.large))
+            let data = try! Data(contentsOf: url!)
+            self.image = UIImage(data: data)
+        }
+    }
+
 
     weak var delegate: CardViewDelegate?
     
@@ -29,6 +36,14 @@ class CardView: UIImageView {
     }
 
     func setupView() {
+        
+        ApiService.fetchTenRndmCards { antwort in
+            print("#" + (antwort.data.first?.name ?? "keineKarte"))
+            DispatchQueue.main.async {
+
+                self.cards = antwort.data
+            }
+        }
         originalPoint = center
         
         layer.cornerRadius = bounds.width / 20
@@ -38,27 +53,24 @@ class CardView: UIImageView {
 
     func cardGoesRight() {
         
-        var likedPkm = Pokedex(context: appDelegate.persistentContainer.viewContext)
+
         
-        likedPkm.name = cardSaver.name
-        appDelegate.saveContext()
-        
-        delegate?.cardGoesRight(card: self)
+        delegate?.cardGoesRight(card: cards[currentIndex])
         let finishPoint = CGPoint(x: frame.size.width*2, y: 2 * yCenter + originalPoint.y)
         UIView.animate(withDuration: 0.5, animations: {
             self.center = finishPoint
         }, completion: {(_) in
-            self.removeFromSuperview()
+            self.nextCard()
         })
     }
     func cardGoesLeft() {
         
-        delegate?.cardGoesLeft(card: self)
+        delegate?.cardGoesLeft(card: cards[currentIndex])
         let finishPoint = CGPoint(x: -frame.size.width*2, y: 2 * yCenter + originalPoint.y)
         UIView.animate(withDuration: 0.5, animations: {
             self.center = finishPoint
         }, completion: {(_) in
-            self.removeFromSuperview()
+            self.nextCard()
         })
 
     }
@@ -71,7 +83,7 @@ class CardView: UIImageView {
         // Keep swiping
         case .began:
             originalPoint = self.center;
-            self.delegate?.didSelectCard(card: self)
+            self.delegate?.didSelectCard(card: cards[currentIndex])
             break;
         //in the middle of a swipe
         case .changed:
@@ -95,6 +107,28 @@ class CardView: UIImageView {
             fatalError()
         }
     }
+    
+    func nextCard(){
+        if currentIndex < 9 {
+            currentIndex += 1
+            self.image = UIImage(named: "rueckseite")
+            let url = URL(string: (cards[currentIndex].images.large))
+            let data = try! Data(contentsOf: url!)
+            self.image = UIImage(data: data)
+        }else{
+            currentIndex = 0
+            ApiService.fetchTenRndmCards { antwort in
+                print("#" + (antwort.data.first?.name ?? "keineKarte"))
+                DispatchQueue.main.async {
+                    self.cards = antwort.data
+                }
+            }
+        }
+        UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1.0, options: [], animations: {
+            self.center = self.originalPoint
+            self.transform = CGAffineTransform(rotationAngle: 0)
+        })
+    }
 
     fileprivate func afterSwipeAction() {
         
@@ -103,8 +137,7 @@ class CardView: UIImageView {
         }
         else if xCenter < -theresoldMargin {
             cardGoesLeft()
-        }
-        else {
+        }else{
             UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1.0, options: [], animations: {
                 self.center = self.originalPoint
                 self.transform = CGAffineTransform(rotationAngle: 0)
