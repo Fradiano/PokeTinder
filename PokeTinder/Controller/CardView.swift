@@ -23,6 +23,7 @@ class CardView: UIImageView {
     }
 
 
+
     weak var delegate: CardViewDelegate?
     
     var cardSaver: Datum!

@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+
+
+    
     
     override func viewDidLoad() {
         
@@ -31,7 +35,10 @@ extension ViewController: CardViewDelegate{
     func cardGoesRight(card: Datum) {
         var likedPkm = Pokedex(context: appDelegate.persistentContainer.viewContext)
         
+        
+        
         likedPkm.name = card.name
+        likedPkm.image = firstCard.image?.jpegData(compressionQuality: 1.0)
         appDelegate.saveContext()
     }
     

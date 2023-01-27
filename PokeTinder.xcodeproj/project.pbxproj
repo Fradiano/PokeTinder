@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A49B381297E82E1004BC390 /* PokedexTableViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49B380297E82E1004BC390 /* PokedexTableViewTableViewController.swift */; };
+		9A4AEFEF2982933900398019 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4AEFEE2982933900398019 /* LoginViewController.swift */; };
+		9A4AEFF12982977500398019 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A4AEFF02982977500398019 /* GoogleService-Info.plist */; };
+		9A4AEFF42982A54200398019 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9A4AEFF32982A54200398019 /* FirebaseAnalytics */; };
+		9A4AEFF62982A54200398019 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9A4AEFF52982A54200398019 /* FirebaseAnalyticsSwift */; };
+		9A4AEFF82982B08F00398019 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4AEFF72982B08F00398019 /* DetailViewController.swift */; };
+		9A7D2624298288FA00D4607D /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D2623298288FA00D4607D /* ProfilViewController.swift */; };
 		9AA61CBA2977F72200E45F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CB92977F72200E45F2A /* AppDelegate.swift */; };
 		9AA61CBC2977F72200E45F2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CBB2977F72200E45F2A /* SceneDelegate.swift */; };
 		9AA61CBE2977F72200E45F2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA61CBD2977F72200E45F2A /* ViewController.swift */; };
@@ -40,6 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A49B380297E82E1004BC390 /* PokedexTableViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexTableViewTableViewController.swift; sourceTree = "<group>"; };
+		9A4AEFEE2982933900398019 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9A4AEFF02982977500398019 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9A4AEFF72982B08F00398019 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9A7D2623298288FA00D4607D /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
 		9AA61CB62977F72200E45F2A /* PokeTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA61CB92977F72200E45F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AA61CBB2977F72200E45F2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A4AEFF62982A54200398019 /* FirebaseAnalyticsSwift in Frameworks */,
+				9A4AEFF42982A54200398019 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +98,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A4AEFF92982B3A200398019 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A4AEFF72982B08F00398019 /* DetailViewController.swift */,
+				9A7D2623298288FA00D4607D /* ProfilViewController.swift */,
+				9A49B380297E82E1004BC390 /* PokedexTableViewTableViewController.swift */,
+				9AA61CEC2977F7C600E45F2A /* CardView.swift */,
+				9AA61CBD2977F72200E45F2A /* ViewController.swift */,
+				9A4AEFEE2982933900398019 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A4AEFFA2982B3BA00398019 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AA61CC22977F72200E45F2A /* PokeTinder.xcdatamodeld */,
+				9AA61CF229783C6900E45F2A /* ApiAntwort.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A4AEFFB2982B3C600398019 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9AA61CC72977F72400E45F2A /* LaunchScreen.storyboard */,
+				9AA61CBF2977F72200E45F2A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9AA61CAD2977F72200E45F2A = {
 			isa = PBXGroup;
 			children = (
@@ -109,15 +154,13 @@
 			children = (
 				9AA61CB92977F72200E45F2A /* AppDelegate.swift */,
 				9AA61CBB2977F72200E45F2A /* SceneDelegate.swift */,
-				9AA61CBD2977F72200E45F2A /* ViewController.swift */,
-				9AA61CEC2977F7C600E45F2A /* CardView.swift */,
-				9AA61CBF2977F72200E45F2A /* Main.storyboard */,
-				9AA61CC52977F72400E45F2A /* Assets.xcassets */,
-				9AA61CC72977F72400E45F2A /* LaunchScreen.storyboard */,
-				9AA61CCA2977F72400E45F2A /* Info.plist */,
-				9AA61CC22977F72200E45F2A /* PokeTinder.xcdatamodeld */,
+				9A4AEFFB2982B3C600398019 /* View */,
+				9A4AEFFA2982B3BA00398019 /* Model */,
+				9A4AEFF92982B3A200398019 /* Controller */,
 				9AA61CF029783BE900E45F2A /* ApiService.swift */,
-				9AA61CF229783C6900E45F2A /* ApiAntwort.swift */,
+				9AA61CC52977F72400E45F2A /* Assets.xcassets */,
+				9A4AEFF02982977500398019 /* GoogleService-Info.plist */,
+				9AA61CCA2977F72400E45F2A /* Info.plist */,
 			);
 			path = PokeTinder;
 			sourceTree = "<group>";
@@ -155,6 +198,10 @@
 			dependencies = (
 			);
 			name = PokeTinder;
+			packageProductDependencies = (
+				9A4AEFF32982A54200398019 /* FirebaseAnalytics */,
+				9A4AEFF52982A54200398019 /* FirebaseAnalyticsSwift */,
+			);
 			productName = PokeTinder;
 			productReference = 9AA61CB62977F72200E45F2A /* PokeTinder.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +274,9 @@
 				Base,
 			);
 			mainGroup = 9AA61CAD2977F72200E45F2A;
+			packageReferences = (
+				9A4AEFF22982A54200398019 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 9AA61CB72977F72200E45F2A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -244,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AA61CC92977F72400E45F2A /* LaunchScreen.storyboard in Resources */,
+				9A4AEFF12982977500398019 /* GoogleService-Info.plist in Resources */,
 				9AA61CC62977F72400E45F2A /* Assets.xcassets in Resources */,
 				9AA61CC12977F72200E45F2A /* Main.storyboard in Resources */,
 			);
@@ -270,12 +321,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A4AEFF82982B08F00398019 /* DetailViewController.swift in Sources */,
+				9A4AEFEF2982933900398019 /* LoginViewController.swift in Sources */,
+				9A7D2624298288FA00D4607D /* ProfilViewController.swift in Sources */,
 				9AA61CC42977F72200E45F2A /* PokeTinder.xcdatamodeld in Sources */,
 				9AA61CBE2977F72200E45F2A /* ViewController.swift in Sources */,
 				9AA61CF329783C6900E45F2A /* ApiAntwort.swift in Sources */,
 				9AA61CF129783BE900E45F2A /* ApiService.swift in Sources */,
 				9AA61CBA2977F72200E45F2A /* AppDelegate.swift in Sources */,
 				9AA61CBC2977F72200E45F2A /* SceneDelegate.swift in Sources */,
+				9A49B381297E82E1004BC390 /* PokedexTableViewTableViewController.swift in Sources */,
 				9AA61CED2977F7C600E45F2A /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,6 +667,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A4AEFF22982A54200398019 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A4AEFF32982A54200398019 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A4AEFF22982A54200398019 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		9A4AEFF52982A54200398019 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A4AEFF22982A54200398019 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9AA61CC22977F72200E45F2A /* PokeTinder.xcdatamodeld */ = {
